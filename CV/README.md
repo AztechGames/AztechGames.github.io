@@ -1,2 +1,0 @@
-![Preview](./preview.png)
-
