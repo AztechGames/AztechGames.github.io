@@ -81,9 +81,54 @@
     const DIR = "assets/img/certs/";
     const FALLBACK = ["GFA Winter Jam - ODTU Teknokent ATOM.jpg", "Game Development Winter Camp 2022 - Bilisim Vadisi.jpg"];
     const SHOW = 6;
-    // Featured first: game / Unity / jam certificates, then everything else
-    const PRIORITY = [/jam|hackathon/i, /bootcamp/i, /game|oyun/i, /unity/i, /c#/i, /scrum|product|proje|ürün/i];
-    const rank = n => { const i = PRIORITY.findIndex(r => r.test(n)); return i < 0 ? 99 : i; };
+    // Display order: most globally recognised / prestigious first. Files not listed here appear at the end (A–Z).
+    const ORDER = [
+      "Introduction to Game Design - CalArts (Coursera)",
+      "Introduction to Game Development - Michigan State University (Coursera)",
+      "Introduction to Git and GitHub - Google (Coursera)",
+      "Introduction to C# Programming and Unity - University of Colorado (Coursera)",
+      "More C# Programming and Unity - University of Colorado (Coursera)",
+      "Intermediate Object-Oriented Programming for Unity Games - University of Colorado (Coursera)",
+      "Microsoft Azure ile GPU Tabanlı Veri Bilimi - Microsoft Learn Student Ambassadors",
+      "Scrum The Basics - LinkedIn Learning",
+      "Game Design Foundations 1 - Ideas, Core Loops and Goals - LinkedIn Learning",
+      "Gamifying Training to Improve Learning Outcomes - LinkedIn Learning",
+      "Basitleştirilmiş Proje Yönetimi - LinkedIn Learning",
+      "Üretken Yapay Zeka Nedir - LinkedIn Learning",
+      "İş Analizi Nedir - LinkedIn Learning",
+      "Herkese Müttefik Olmak - LinkedIn Learning",
+      "Word 2019 Essential Training - LinkedIn Learning",
+      "Build a Product Roadmap with Aha - Coursera",
+      "Business Analysis and Process Management - Coursera",
+      "Create a Project Management Tracker using Microsoft Excel - Coursera",
+      "Gamification Learning with Genially - Coursera",
+      "Getting Started in Google Analytics - Coursera",
+      "Introduction to Microsoft Excel - Coursera",
+      "Basic Game Development with Levels using Scratch - Coursera",
+      "Go Game İklim Odaklı Oyun Geliştirme Hackathonu (Mentör) - Konya Büyükşehir Gençlik Meclisi",
+      "GFA Winter Jam - ODTU Teknokent ATOM",
+      "Game Development Winter Camp 2022 - Bilisim Vadisi",
+      "Oyunlarda Ürün Yönetimi ve Girişimcilik - BTK Akademi",
+      "Unity ile Dijital Oyun Geliştirmeye Giriş - BTK Akademi",
+      "Unity ile Dijital Oyun Geliştirmeye Giriş (Sertifika 2) - BTK Akademi",
+      "Unity ile Eğitici Oyunlar - BTK Akademi",
+      "Unity ile Eğitici Oyunlar (Sertifika 2) - BTK Akademi",
+      "Android ile Mobil Programlama (192 saat) - MEB",
+      "İki Boyutlu Çizim - Autocad (192 saat) - MEB",
+      "Bilgisayar İşletmenliği (163 saat) - MEB",
+      "Ofis Programları Kullanımı (72 saat) - MEB",
+      "Sıfırdan Unity 3D ile Oyun Geliştirme - Udemy",
+      "Unity 3D ile RPG Oyun Geliştirme - Udemy",
+      "C# ile Hayatın Gerçekleri - Udemy",
+      "C# ile Blockchain Kodlama - Udemy",
+      "Blockchain Nedir - Udemy",
+      "İş Sağlığı ve Güvenliği (İSG) - Udemy",
+      "Mobil Oyun Bootcamp - Patika.dev",
+      "Game Design Eğitim Programı - TOGO",
+      "Game Development Event - Istinye University DSC",
+      "İki Yıldız Dalıcı (Two Star Diver) - TSSF"
+    ];
+    const rank = n => { const i = ORDER.indexOf(n.replace(/\.[^.]+$/, "")); return i < 0 ? 999 : i; };
     const gal = document.getElementById("cert-gallery");
     const more = document.getElementById("cert-more");
     let files = (window.CERT_FILES && window.CERT_FILES.length) ? window.CERT_FILES : FALLBACK;
