@@ -5,447 +5,295 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atakan Naci Çakır — Game Developer, Product Manager & Founder of Aztech Games</title>
-  <meta name="description" content="Portfolio and CV of Atakan Naci Çakır: founder of Aztech Games, game developer, product manager and Unity trainer with 7+ years in the games industry." />
-  <meta property="og:title" content="Atakan Naci Çakır — Portfolio & CV" />
-  <meta property="og:description" content="Game Developer | Product Manager | Entrepreneur. Mobile games, Unity Asset Store tools and 1000+ hours of game dev training." />
+  <title>Atakan Naci Çakır — Game Producer & Founder of Aztech Games</title>
+  <meta name="description" content="Atakan Naci Çakır: game producer, product manager and founder of Aztech Games. 150+ games made, 18 Unity Asset Store packages, 1000+ hours of game development training." />
+  <meta property="og:title" content="Atakan Naci Çakır — Game Producer" />
+  <meta property="og:description" content="150+ games made, 18 Unity assets, 1000+ hours of game development training." />
   <meta property="og:image" content="https://aztechgames.github.io/assets/img/avatar.png" />
-  <meta name="theme-color" content="#0b0d17" />
+  <meta name="theme-color" content="#0F3D3A" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css?v=5" />
+  <link rel="stylesheet" href="assets/css/style.css?v=10" />
 </head>
 <body>
-  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ============ NAV ============ -->
-  <header class="nav" id="nav">
-    <a href="#home" class="logo" aria-label="Home"><span class="logo-mark">A</span></a>
-    <nav>
-      <ul class="nav-links" id="nav-links">
+  <header class="bar" id="bar">
+    <a href="#top" class="mark" aria-label="Back to top">A</a>
+    <nav aria-label="Sections">
+      <ul class="menu" id="menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#academy">Training</a></li>
-        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#assets">Assets</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <a href="assets/cv.pdf" class="btn btn-small btn-outline nav-cv" download="Atakan_Naci_Cakir_CV.pdf"><i class="fa-solid fa-download"></i> CV</a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a class="cv-link" href="assets/cv.pdf" download="Atakan_Naci_Cakir_CV.pdf">Download CV</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
   </header>
 
-  <main>
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="home">
-      <div class="hero-text reveal">
-        <p class="eyebrow">👋 Hello, I'm</p>
-        <h1 class="hero-name">Atakan Naci <span class="gradient-text">Çakır</span></h1>
-        <h2 class="hero-role">I build <span id="typed" class="typed"></span><span class="caret">|</span></h2>
-        <p class="hero-desc">
-          Game Developer, Product Manager &amp; Entrepreneur with <strong>7+ years</strong> in the games industry.
-          Founder of <strong>Aztech Games</strong> — mobile games with partners like Rollic, Moonee and Lion Studios,
-          Unity Asset Store tools, and <strong>1000+ hours</strong> of game development training.
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1 class="name">Atakan Naci<br />Çakır</h1>
+        <p class="role">Game producer, product manager and founder of Aztech Games.</p>
+        <p class="lede">
+          Seven years of making mobile games — with partners like Rollic, Moonee and Lion Studios —
+          building Unity tools other studios ship with, and teaching the next wave of developers.
         </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-gamepad"></i> View My Work</a>
-          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
-        </div>
-        <ul class="socials">
-          <li><a href="https://www.linkedin.com/in/atakannaci/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-          <li><a href="https://github.com/AztechGames" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
-          <li><a href="https://assetstore.unity.com/publishers/68211" target="_blank" rel="noopener" aria-label="Unity Asset Store" title="Unity Asset Store"><i class="fa-brands fa-unity"></i></a></li>
-          <li><a href="https://apps.apple.com/us/developer/atakan-cakir/id1598734806" target="_blank" rel="noopener" aria-label="App Store" title="App Store"><i class="fa-brands fa-app-store-ios"></i></a></li>
-          <li><a href="https://play.google.com/store/apps/developer?id=Aztech+Games" target="_blank" rel="noopener" aria-label="Google Play" title="Google Play"><i class="fa-brands fa-google-play"></i></a></li>
-          <li><a href="https://www.youtube.com/@AztechGames" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
-          <li><a href="https://discord.com/invite/XVmYMdcRA2" target="_blank" rel="noopener" aria-label="Discord" title="Discord"><i class="fa-brands fa-discord"></i></a></li>
-          <li><a href="https://www.instagram.com/aztech_games/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-      </div>
-      <div class="hero-visual reveal">
-        <div class="avatar-wrap">
-          <div class="avatar-ring"></div>
-          <img src="assets/img/avatar.png" alt="Atakan Naci Çakır avatar" class="avatar" />
-          <div class="float-badge badge-1"><i class="fa-solid fa-clapperboard"></i> Game Producer</div>
-          <div class="float-badge badge-2"><i class="fa-solid fa-gamepad"></i> 150+ Games Made</div>
-          <div class="float-badge badge-3"><i class="fa-solid fa-chalkboard-user"></i> 1000+ Hours Trained</div>
+        <div class="actions">
+          <a class="btn btn-solid" href="#games">See the games</a>
+          <a class="btn btn-line" href="mailto:atakan_naci@hotmail.com">Email me</a>
         </div>
       </div>
-      <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+      <figure class="portrait">
+        <div class="portrait-frame"><img src="assets/img/avatar.png" alt="Illustrated portrait of Atakan Naci Çakır as an Aztec eagle warrior" /></div>
+      </figure>
     </section>
 
-    <!-- ============ STATS ============ -->
-    <section class="stats">
-      <div class="stat reveal"><span class="stat-num" data-count="7">0</span><span class="stat-plus">+</span><p>Years in Games</p></div>
-      <div class="stat reveal"><span class="stat-num" data-count="150">0</span><span class="stat-plus">+</span><p>Games Published</p></div>
-      <div class="stat reveal"><span class="stat-num" data-count="18">0</span><span class="stat-plus">+</span><p>Unity Assets</p></div>
-      <div class="stat reveal"><span class="stat-num" data-count="1000">0</span><span class="stat-plus">+</span><p>Hours of Training Given</p></div>
+    <!-- PYRAMID OF NUMBERS -->
+    <section class="pyramid-wrap" aria-label="At a glance">
+      <ol class="pyramid">
+        <li class="step s1"><strong>7</strong><span>years in the games industry</span></li>
+        <li class="step s2"><strong>18</strong><span>Unity Asset Store packages</span></li>
+        <li class="step s3"><strong>1000+</strong><span>hours of training delivered</span></li>
+        <li class="step s4"><strong>150+</strong><span>games made</span></li>
+      </ol>
+      <div class="fret" aria-hidden="true"></div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="section" id="about">
-      <div class="section-head reveal">
-        <span class="section-tag">01 — About</span>
-        <h2>Who I <span class="gradient-text">Am</span></h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-img reveal">
-          <img src="assets/img/avatar.png" alt="Atakan Naci Çakır" />
-          <div class="about-exp"><strong>7+</strong><span>years in the<br/>games industry</span></div>
-        </div>
-        <div class="about-text reveal">
+    <!-- ABOUT -->
+    <section class="sec about" id="about">
+      <h2 class="sec-title">About</h2>
+      <div class="about-body">
+        <div class="prose">
           <p>
-            With over <strong>7 years of experience</strong> in the gaming industry, I have worked in Unity-based game development,
-            game design and product management. At my own studio, <strong>Aztech Games</strong>, I managed product development
-            end-to-end — leading a team of 10, handling publisher relations and shaping product strategy.
+            I've worked across Unity development, game design and product management. At my own studio,
+            <strong>Aztech Games</strong>, I ran product development end to end: a team of ten, publisher
+            relations with Rollic, Moonee and Lion Studios, and the strategy behind what we built next.
           </p>
           <p>
-            Through a data-driven approach and a strong technical background, I focus on improving both player experience and
-            product performance. I also love teaching: I've delivered <strong>1000+ hours</strong> of in-person and online training
-            for universities and private institutions.
+            I like decisions backed by data and a technical understanding of what's possible, because that's
+            how player experience and product performance improve together. I also teach — more than 1000 hours
+            in person and online, for universities, private institutions and our own academy.
           </p>
-          <ul class="info-list">
-            <li><i class="fa-solid fa-user"></i><span>Name</span><strong>Atakan Naci Çakır</strong></li>
-            <li><i class="fa-solid fa-location-dot"></i><span>Location</span><strong>İstanbul, Türkiye</strong></li>
-            <li><i class="fa-solid fa-envelope"></i><span>Email</span><strong>atakan_naci@hotmail.com</strong></li>
-            <li><i class="fa-solid fa-language"></i><span>Languages</span><strong>Turkish (Native), English (Professional)</strong></li>
-            <li><i class="fa-solid fa-briefcase"></i><span>Status</span><strong class="status-open">Open to work · Hybrid / Remote</strong></li>
-            <li><i class="fa-solid fa-globe"></i><span>Website</span><strong><a href="https://aztechgamesltd.blogspot.com/" target="_blank" rel="noopener">Aztech Games</a></strong></li>
-            <li><i class="fa-solid fa-car"></i><span>Driver's License</span><strong>Class B</strong></li>
-          </ul>
-          <div class="hobbies">
-            <span class="hobbies-title">Hobbies</span>
-            <span><i class="fa-solid fa-parachute-box"></i> Paragliding</span>
-            <span><i class="fa-solid fa-water"></i> Scuba Diving</span>
-            <span><i class="fa-solid fa-campground"></i> Camping</span>
-            <span><i class="fa-solid fa-gamepad"></i> Computer Games</span>
-          </div>
-          <a href="assets/cv.pdf" class="btn btn-primary" download="Atakan_Naci_Cakir_CV.pdf"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+          <p class="hobbies">Away from the screen: paragliding, scuba diving, camping — and more games.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>İstanbul, Türkiye</dd></div>
+          <div><dt>Open to</dt><dd>Hybrid or remote roles</dd></div>
+          <div><dt>Languages</dt><dd>Turkish (native), English (professional)</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:atakan_naci@hotmail.com">atakan_naci@hotmail.com</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+905539510133">+90 553 951 01 33</a></dd></div>
+          <div><dt>Studio site</dt><dd><a href="https://aztechgamesltd.blogspot.com/" target="_blank" rel="noopener">Aztech Games</a></dd></div>
+          <div><dt>Driving licence</dt><dd>Class B</dd></div>
+        </dl>
+      </div>
+      <div class="skills">
+        <div>
+          <h3>Making games</h3>
+          <p>Unity, C#, custom editor tools and frameworks, combat systems, boss and NPC AI, animation integration, Git.</p>
+        </div>
+        <div>
+          <h3>Running products</h3>
+          <p>Product management, game design, leading a team of ten, publisher relations, Scrum, Jira, Slack, Notion, operations and finance.</p>
+        </div>
+        <div>
+          <h3>Creating and teaching</h3>
+          <p>Photoshop, DaVinci Resolve, Blender, low-poly art, workshops, mentoring, consulting, gamification.</p>
         </div>
       </div>
     </section>
 
-    <!-- ============ SKILLS ============ -->
-    <section class="section" id="skills">
-      <div class="section-head reveal">
-        <span class="section-tag">02 — Skills</span>
-        <h2>What I <span class="gradient-text">Do</span></h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <h3><i class="fa-solid fa-code"></i> Game Development</h3>
-          <div class="chips">
-            <span>Unity</span><span>C#</span><span>Custom Editor Tools</span><span>Frameworks &amp; Templates</span>
-            <span>Combat Systems</span><span>Boss &amp; NPC AI</span><span>Animation Integration</span><span>Hyper-casual</span><span>Git</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <h3><i class="fa-solid fa-chart-line"></i> Product &amp; Leadership</h3>
-          <div class="chips">
-            <span>Product Management</span><span>Game Design</span><span>Team Management (10)</span><span>Publisher Relations</span>
-            <span>Data-driven Decisions</span><span>Scrum</span><span>Jira</span><span>Slack</span><span>Notion</span><span>Operations &amp; Finance</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <h3><i class="fa-solid fa-palette"></i> Creative &amp; Teaching</h3>
-          <div class="chips">
-            <span>Photoshop</span><span>DaVinci Resolve</span><span>Blender</span><span>Low-poly Art</span>
-            <span>Training &amp; Workshops</span><span>Mentoring</span><span>Consulting</span><span>Gamification</span>
-          </div>
-        </div>
-      </div>
-      <p class="partners-title reveal">Games developed in partnership with</p>
-      <div class="tech-marquee reveal" aria-hidden="true">
-        <div class="marquee-track partners">
-          <span>Rollic</span><span>Moonee</span><span>Lion Studios</span><span>Hedgehog Games</span><span>Unity Asset Store</span><span>App Store</span><span>Google Play</span>
-          <span>Rollic</span><span>Moonee</span><span>Lion Studios</span><span>Hedgehog Games</span><span>Unity Asset Store</span><span>App Store</span><span>Google Play</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ EXPERIENCE ============ -->
-    <section class="section" id="experience">
-      <div class="section-head reveal">
-        <span class="section-tag">03 — Experience</span>
-        <h2>Work <span class="gradient-text">Journey</span></h2>
-      </div>
-      <div class="timeline">
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <span class="tl-date">Jan 2025 — Jan 2026</span>
-            <h3>Managing Partner / Operations Manager</h3>
-            <h4><i class="fa-solid fa-building"></i> Mert Dizay · Packaging Machinery Manufacturing</h4>
+    <!-- WORK -->
+    <section class="sec work" id="work">
+      <h2 class="sec-title">Work</h2>
+      <ol class="jobs">
+        <li class="job">
+          <p class="when">2025 – 2026</p>
+          <div>
+            <h3>Managing Partner &amp; Operations Manager</h3>
+            <p class="where">Mert Dizay, packaging machinery manufacturing</p>
             <ul>
-              <li>Invested in and partnered with a manufacturing company producing packaging machines.</li>
-              <li>Managed company operations and financial processes.</li>
-              <li>Managed a financial structure with a monthly turnover of approximately 1.5 million TL.</li>
+              <li>Invested in and partnered with a manufacturer of packaging machines.</li>
+              <li>Ran company operations and financial processes.</li>
+              <li>Managed a financial structure with roughly 1.5 million TL monthly turnover.</li>
             </ul>
           </div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <span class="tl-date">Jan 2021 — Jan 2025</span>
-            <h3>Founder / Product Manager &amp; Game Designer</h3>
-            <h4><i class="fa-solid fa-building"></i> Aztech Games</h4>
+        </li>
+        <li class="job">
+          <p class="when">2021 – 2025</p>
+          <div>
+            <h3>Founder, Product Manager &amp; Game Designer</h3>
+            <p class="where">Aztech Games</p>
             <ul>
-              <li>Managed a team of 10, personally directing game design and product management processes.</li>
+              <li>Led a team of ten and personally directed game design and product management.</li>
               <li>Developed mobile games through exclusive partnerships with Rollic, Moonee and Lion Studios.</li>
-              <li>Designed custom Unity editor tools and frameworks to accelerate development cycles.</li>
-              <li>Delivered 1000+ hours of in-person and online training at academic and corporate levels (universities, private institutions).</li>
-              <li>Provided consultancy to independent teams on game design and technical workflows.</li>
+              <li>Designed custom Unity editor tools and frameworks to shorten development cycles.</li>
+              <li>Delivered 1000+ hours of in-person and online training for universities and private institutions.</li>
+              <li>Consulted independent teams on game design and technical workflows.</li>
             </ul>
           </div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <span class="tl-date">Sep 2020 — Dec 2020</span>
+        </li>
+        <li class="job">
+          <p class="when">2020</p>
+          <div>
             <h3>Core Mechanic Developer</h3>
-            <h4><i class="fa-solid fa-building"></i> Hedgehog Games</h4>
+            <p class="where">Hedgehog Games</p>
             <ul>
-              <li>Focused on combat systems, AI (Boss &amp; NPC) mechanics and animation integration.</li>
-              <li>Developed core mechanics for a casual 2.5D pixel beat 'em up game.</li>
+              <li>Built combat systems, boss and NPC AI, and animation integration.</li>
+              <li>Developed the core mechanics of a casual 2.5D pixel beat 'em up.</li>
             </ul>
           </div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <span class="tl-date">Jan 2018 — Sep 2020</span>
+        </li>
+        <li class="job">
+          <p class="when">2018 – 2020</p>
+          <div>
             <h3>Indie Game Developer</h3>
-            <h4><i class="fa-solid fa-user-astronaut"></i> Freelance / Solo</h4>
+            <p class="where">Freelance</p>
             <ul>
-              <li>Gained commercial experience developing small and medium-scale projects with Unity.</li>
-              <li>Took part in many Game Jams, prototyping in every genre and achieving rankings.</li>
+              <li>Shipped small and medium Unity projects commercially.</li>
+              <li>Competed in many game jams, prototyping in every genre and placing in several.</li>
             </ul>
           </div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
-    <section class="section" id="projects">
-      <div class="section-head reveal">
-        <span class="section-tag">04 — Showcase</span>
-        <h2>Games &amp; <span class="gradient-text">Unity Assets</span></h2>
+    <!-- GAMES -->
+    <section class="sec games" id="games">
+      <div class="sec-head">
+        <h2 class="sec-title">Games</h2>
+        <p class="sec-note">150+ games made over the years. These are live on the App Store under Aztech Games — tap one to open it.</p>
       </div>
-      <div class="filters reveal" id="filters">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="game">Mobile Games</button>
-        <button class="filter" data-filter="asset">Unity Assets</button>
-      </div>
-      <div class="projects-grid" id="projects-grid">
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/dimension-2d-3d/id6720739158" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/88/c4/ff/88c4ffb3-f62d-0cc9-67eb-5ac585ddb31f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png" alt="Dimension 2D/3D icon" loading="lazy" />
-          <h3>Dimension 2D/3D</h3><span>Puzzle</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/treadmill-challenge/id6642680370" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/c1/8e/8bc18e4e-18d9-2a4d-9520-7a0b6c7c53be/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png" alt="Treadmill Challenge icon" loading="lazy" />
-          <h3>Treadmill Challenge</h3><span>Arcade</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/die-for-run/id6505026456" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c6/f7/44/c6f74491-5988-d359-b582-310af5f8a04e/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png" alt="Die For Run icon" loading="lazy" />
-          <h3>Die For Run</h3><span>Runner</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/bob-g/id6443661606" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/5e/66/b85e66aa-690c-d037-371b-21f5ce75c044/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png" alt="Bob.G icon" loading="lazy" />
-          <h3>Bob.G</h3><span>Casual</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/coin-smash-asmr/id1667389248" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/99/96/e4/9996e4b5-edd3-8e73-ea30-b9a73732ed53/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="Coin Smash ASMR icon" loading="lazy" />
-          <h3>Coin Smash ASMR</h3><span>ASMR</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/against-the-flood/id1635296114" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/9a/bc/7c/9abc7c59-1bf1-c574-fa43-533b946695ad/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="Against the Flood icon" loading="lazy" />
-          <h3>Against the Flood</h3><span>Strategy</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/farmer-cowboy/id1636646116" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/aa/bf/81/aabf810a-82be-c6b9-322d-869d561e9058/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="Farmer Cowboy icon" loading="lazy" />
-          <h3>Farmer Cowboy</h3><span>Action</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/fit-to-sit/id1630630638" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/11/0d/8d/110d8d3b-fa5f-16ce-be39-1d6f8a1201b0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="Fit to Sit icon" loading="lazy" />
-          <h3>Fit to Sit</h3><span>Puzzle</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/race-n-fight/id1630626568" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/80/3f/0c/803f0c4a-7d8d-f9da-b7e6-2bcc64a7d384/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="Race 'N Fight icon" loading="lazy" />
-          <h3>Race 'N Fight</h3><span>Racing</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/changing-platforms/id1625915469" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/b8/10/c8/b810c809-aca5-88c2-61ff-717867cdff29/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="Changing Platforms icon" loading="lazy" />
-          <h3>Changing Platforms</h3><span>Arcade</span>
-        </a>
-        <a class="game-card reveal" data-cat="game" href="https://apps.apple.com/us/app/helix-runner-3d/id1625921472" target="_blank" rel="noopener">
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/0c/24/c4/0c24c418-46c4-4a4e-a983-054e1c12d33b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="Helix Runner 3D icon" loading="lazy" />
-          <h3>Helix Runner 3D</h3><span>Runner</span>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/375816" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/0f0665a1-9e13-4ef0-93db-250bdf190dcc.jpg" alt="Ready-2-Use Character Controller PRO" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool</span><h3>Ready-2-Use Character Controller PRO</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/270737" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/47d674bc-8c7a-4ca8-9c5c-215432015e89.jpg" alt="Plane Controller (Glider)" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool · Free</span><h3>Plane Controller (Glider)</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/232898" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/36a593cc-3467-4e98-b354-e005e14d6422.jpg" alt="3D Warrior YellowMan" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">3D · Free</span><h3>3D Warrior YellowMan</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/295603" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/327b4d02-3076-459a-9b81-ac664e1e1cf8.jpg" alt="Texture To Model (Voxel)" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool</span><h3>Texture To Model (Voxel)</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/296997" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/02f1d138-7744-4e2c-a079-7685c6ac0042.jpg" alt="PlayerPrefs Inspector" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool</span><h3>PlayerPrefs Inspector</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/378418" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/cd7de1b7-72f7-42ab-8f96-9a4b117b7091.jpg" alt="Aztec StickMan" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">3D · Free</span><h3>Aztec StickMan</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/353184" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/64e9e492-2459-48d7-9b60-d453279d81bd.jpg" alt="Missing Script Cleaner" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool</span><h3>Missing Script Cleaner</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/321526" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/55d797af-5994-4f11-a4c3-ca0f6187d83a.jpg" alt="Gems and Crystals + Shaders" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">3D</span><h3>Gems and Crystals + Shaders</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/255869" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/b02f357f-4ecf-4c9c-a585-51f276301075.jpg" alt="3D Rigidbody Lite" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool</span><h3>3D Rigidbody Lite</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/321984" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/c8decab0-bf13-45c4-b0be-d29572f5c5c8.jpg" alt="PC &amp; Console Buttons Icons" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">2D · Free</span><h3>PC &amp; Console Buttons Icons</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/312836" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/681ccd89-ab4b-4180-8adc-f5e0e4eb2d98.jpg" alt="Master Audio" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool</span><h3>Master Audio</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/270568" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/fb5138e0-9269-4032-a3b2-3aaf4201545e.jpg" alt="Ready-2-Use Character Controller (Rigidbody)" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool</span><h3>Ready-2-Use Character Controller (Rigidbody)</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/307493" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/a6e12913-9344-49a6-876d-a932b545c124.jpg" alt="Waypoint and Pathfinding System" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool</span><h3>Waypoint and Pathfinding System</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/271779" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/f69a15a6-b3aa-49fb-99d6-580ab77fbb22.jpg" alt="Western Sheriff - Low Poly" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">3D</span><h3>Western Sheriff - Low Poly</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/321819" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/76147af9-b63d-497d-9229-7c6591e54be1.jpg" alt="Lowpoly Casual Chests" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">3D · Free</span><h3>Lowpoly Casual Chests</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/321105" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/e9712e4f-ffcb-4231-848b-315e3cc7afe3.jpg" alt="Gems and Crystals - Free" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">3D · Free</span><h3>Gems and Crystals - Free</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/295863" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/0e23f2a0-63c7-4110-9a2b-c3cdd5341bc8.jpg" alt="Texture To Model (LITE)" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">Tool · Free</span><h3>Texture To Model (LITE)</h3></div>
-        </a>
-        <a class="project-card reveal" data-cat="asset" href="https://assetstore.unity.com/packages/slug/227725" target="_blank" rel="noopener">
-          <div class="project-img"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/0ac21bb7-f112-43c4-8a9b-509541fc8de5.jpg" alt="HyperCasual Trap and Obstacles" loading="lazy" /><div class="project-overlay"><span><i class="fa-brands fa-unity"></i></span></div></div>
-          <div class="project-body"><span class="project-cat">3D</span><h3>HyperCasual Trap and Obstacles</h3></div>
-        </a>
-      </div>
-      <div class="store-links reveal">
-        <a href="https://apps.apple.com/us/developer/atakan-cakir/id1598734806" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-app-store-ios"></i> All games on App Store</a>
-        <a href="https://play.google.com/store/apps/developer?id=Aztech+Games" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-google-play"></i> Google Play</a>
-        <a href="https://assetstore.unity.com/publishers/68211" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-unity"></i> Asset Store publisher page</a>
-      </div>
+      <ul class="game-grid">
+        <li class="game"><a href="https://apps.apple.com/us/app/dimension-2d-3d/id6720739158" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/88/c4/ff/88c4ffb3-f62d-0cc9-67eb-5ac585ddb31f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Dimension 2D/3D</h3><p>Puzzle</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/treadmill-challenge/id6642680370" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/c1/8e/8bc18e4e-18d9-2a4d-9520-7a0b6c7c53be/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Treadmill Challenge</h3><p>Arcade</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/die-for-run/id6505026456" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c6/f7/44/c6f74491-5988-d359-b582-310af5f8a04e/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Die For Run</h3><p>Runner</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/bob-g/id6443661606" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/5e/66/b85e66aa-690c-d037-371b-21f5ce75c044/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Bob.G</h3><p>Casual</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/coin-smash-asmr/id1667389248" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/99/96/e4/9996e4b5-edd3-8e73-ea30-b9a73732ed53/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Coin Smash ASMR</h3><p>Asmr</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/against-the-flood/id1635296114" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/9a/bc/7c/9abc7c59-1bf1-c574-fa43-533b946695ad/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Against the Flood</h3><p>Strategy</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/farmer-cowboy/id1636646116" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/aa/bf/81/aabf810a-82be-c6b9-322d-869d561e9058/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Farmer Cowboy</h3><p>Action</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/fit-to-sit/id1630630638" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/11/0d/8d/110d8d3b-fa5f-16ce-be39-1d6f8a1201b0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Fit to Sit</h3><p>Puzzle</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/race-n-fight/id1630626568" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/80/3f/0c/803f0c4a-7d8d-f9da-b7e6-2bcc64a7d384/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Race 'N Fight</h3><p>Racing</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/changing-platforms/id1625915469" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/b8/10/c8/b810c809-aca5-88c2-61ff-717867cdff29/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Changing Platforms</h3><p>Arcade</p></a></li>
+        <li class="game"><a href="https://apps.apple.com/us/app/helix-runner-3d/id1625921472" target="_blank" rel="noopener"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/0c/24/c4/0c24c418-46c4-4a4e-a983-054e1c12d33b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png" alt="" loading="lazy" width="256" height="256" /><h3>Helix Runner 3D</h3><p>Runner</p></a></li>
+      </ul>
+      <p class="more-links">
+        <a href="https://apps.apple.com/us/developer/atakan-cakir/id1598734806" target="_blank" rel="noopener"><i class="fa-brands fa-app-store-ios" aria-hidden="true"></i> All games on the App Store</a>
+        <a href="https://play.google.com/store/apps/developer?id=Aztech+Games" target="_blank" rel="noopener"><i class="fa-brands fa-google-play" aria-hidden="true"></i> Google Play</a>
+      </p>
     </section>
 
-    <!-- ============ ACADEMY / TRAINING ============ -->
-    <section class="section" id="academy">
-      <div class="section-head reveal">
-        <span class="section-tag">05 — Training</span>
-        <h2>Teaching &amp; <span class="gradient-text">Aztech Academy</span></h2>
-        <p class="section-sub">1000+ hours of in-person and online training for universities, private institutions and our own academy — plus free bootcamps on YouTube and Discord.</p>
+    <!-- ASSETS -->
+    <section class="sec assets" id="assets">
+      <div class="sec-head">
+        <h2 class="sec-title">Unity assets</h2>
+        <p class="sec-note">Tools and art we use in our own games, published on the Unity Asset Store.</p>
       </div>
-      <div class="academy-grid">
-        <div class="edu-card reveal"><i class="fa-brands fa-unity"></i><h3>Unity Beginner</h3><p>Build and ship your first game in Unity.</p></div>
-        <div class="edu-card reveal"><i class="fa-solid fa-cube"></i><h3>Blender Beginner</h3><p>Model, texture and export game-ready 3D assets.</p></div>
-        <div class="edu-card reveal"><i class="fa-solid fa-chess-knight"></i><h3>Game Design</h3><p>Core loops, level design and player psychology.</p></div>
-        <div class="edu-card reveal"><i class="fa-solid fa-diagram-project"></i><h3>Product Management</h3><p>Plan, prioritise and launch games as a product.</p></div>
-      </div>
-      <div class="store-links reveal">
-        <a href="https://www.youtube.com/@AztechGames" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-youtube"></i> YouTube channel</a>
-        <a href="https://aztechgames.notion.site/E-itim-f623e24b054442f59acb27b877e39df4" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-solid fa-book-open"></i> Course details</a>
-        <a href="https://aztechgamesltd.blogspot.com/#academy" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-solid fa-globe"></i> Aztech Academy</a>
-      </div>
+      <ul class="asset-grid">
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/375816" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/0f0665a1-9e13-4ef0-93db-250bdf190dcc.jpg" alt="" loading="lazy" /><h3>Ready-2-Use Character Controller PRO</h3><p>Tool</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/270737" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/47d674bc-8c7a-4ca8-9c5c-215432015e89.jpg" alt="" loading="lazy" /><h3>Plane Controller (Glider)</h3><p>Tool · Free</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/232898" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/36a593cc-3467-4e98-b354-e005e14d6422.jpg" alt="" loading="lazy" /><h3>3D Warrior YellowMan</h3><p>3D · Free</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/295603" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/327b4d02-3076-459a-9b81-ac664e1e1cf8.jpg" alt="" loading="lazy" /><h3>Texture To Model (Voxel)</h3><p>Tool</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/296997" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/02f1d138-7744-4e2c-a079-7685c6ac0042.jpg" alt="" loading="lazy" /><h3>PlayerPrefs Inspector</h3><p>Tool</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/378418" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/cd7de1b7-72f7-42ab-8f96-9a4b117b7091.jpg" alt="" loading="lazy" /><h3>Aztec StickMan</h3><p>3D · Free</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/353184" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/64e9e492-2459-48d7-9b60-d453279d81bd.jpg" alt="" loading="lazy" /><h3>Missing Script Cleaner</h3><p>Tool</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/321526" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/55d797af-5994-4f11-a4c3-ca0f6187d83a.jpg" alt="" loading="lazy" /><h3>Gems and Crystals + Shaders</h3><p>3D</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/255869" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/b02f357f-4ecf-4c9c-a585-51f276301075.jpg" alt="" loading="lazy" /><h3>3D Rigidbody Lite</h3><p>Tool</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/321984" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/c8decab0-bf13-45c4-b0be-d29572f5c5c8.jpg" alt="" loading="lazy" /><h3>PC &amp; Console Buttons Icons</h3><p>2D · Free</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/312836" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/681ccd89-ab4b-4180-8adc-f5e0e4eb2d98.jpg" alt="" loading="lazy" /><h3>Master Audio</h3><p>Tool</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/270568" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/fb5138e0-9269-4032-a3b2-3aaf4201545e.jpg" alt="" loading="lazy" /><h3>Ready-2-Use Character Controller (Rigidbody)</h3><p>Tool</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/307493" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/a6e12913-9344-49a6-876d-a932b545c124.jpg" alt="" loading="lazy" /><h3>Waypoint and Pathfinding System</h3><p>Tool</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/271779" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/f69a15a6-b3aa-49fb-99d6-580ab77fbb22.jpg" alt="" loading="lazy" /><h3>Western Sheriff - Low Poly</h3><p>3D</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/321819" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/76147af9-b63d-497d-9229-7c6591e54be1.jpg" alt="" loading="lazy" /><h3>Lowpoly Casual Chests</h3><p>3D · Free</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/321105" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/e9712e4f-ffcb-4231-848b-315e3cc7afe3.jpg" alt="" loading="lazy" /><h3>Gems and Crystals - Free</h3><p>3D · Free</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/295863" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/0e23f2a0-63c7-4110-9a2b-c3cdd5341bc8.jpg" alt="" loading="lazy" /><h3>Texture To Model (LITE)</h3><p>Tool · Free</p></a></li>
+        <li class="asset"><a href="https://assetstore.unity.com/packages/slug/227725" target="_blank" rel="noopener"><img src="https://assetstorev1-prd-cdn.unity3d.com/key-image/0ac21bb7-f112-43c4-8a9b-509541fc8de5.jpg" alt="" loading="lazy" /><h3>HyperCasual Trap and Obstacles</h3><p>3D</p></a></li>
+      </ul>
+      <p class="more-links">
+        <a href="https://assetstore.unity.com/publishers/68211" target="_blank" rel="noopener"><i class="fa-brands fa-unity" aria-hidden="true"></i> Publisher page on the Asset Store</a>
+      </p>
     </section>
 
-    <!-- ============ EDUCATION & CERTS ============ -->
-    <section class="section" id="education">
-      <div class="section-head reveal">
-        <span class="section-tag">06 — Education</span>
-        <h2>Education &amp; <span class="gradient-text">Certificates</span></h2>
+    <!-- TEACHING -->
+    <section class="sec teaching" id="teaching">
+      <div class="sec-head">
+        <h2 class="sec-title">Teaching</h2>
+        <p class="sec-note">More than 1000 hours of training for universities, private institutions and Aztech Academy, plus free bootcamps on YouTube and Discord.</p>
       </div>
-      <div class="edu-grid">
-        <div class="edu-card reveal">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <span class="tl-date">2018 — 2023</span>
+      <ul class="courses">
+        <li><h3>Unity Beginner</h3><p>Build and ship your first game in Unity.</p></li>
+        <li><h3>Blender Beginner</h3><p>Model, texture and export game-ready 3D assets.</p></li>
+        <li><h3>Game Design</h3><p>Core loops, level design and player psychology.</p></li>
+        <li><h3>Product Management</h3><p>Plan, prioritise and launch games as a product.</p></li>
+      </ul>
+      <p class="more-links">
+        <a href="https://www.youtube.com/@AztechGames" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube channel</a>
+        <a href="https://aztechgames.notion.site/E-itim-f623e24b054442f59acb27b877e39df4" target="_blank" rel="noopener"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Course details</a>
+        <a href="https://discord.com/invite/XVmYMdcRA2" target="_blank" rel="noopener"><i class="fa-brands fa-discord" aria-hidden="true"></i> Discord community</a>
+      </p>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATES -->
+    <section class="sec certs" id="certificates">
+      <div class="sec-head">
+        <h2 class="sec-title">Education</h2>
+      </div>
+      <div class="edu">
+        <div>
           <h3>B.Sc. Aircraft Electrical-Electronics Engineering</h3>
-          <p>Fırat University · GPA 3.1 / 4.0</p>
+          <p>Fırat University, 2018 – 2023. GPA 3.1 / 4.0.</p>
         </div>
-        <div class="edu-card reveal">
-          <i class="fa-solid fa-certificate"></i>
-          <span class="tl-date">48</span>
-          <h3>Professional Certificates</h3>
-          <p>Plus Game Jam achievement awards and rankings.</p>
-        </div>
-        <div class="edu-card reveal">
-          <i class="fa-solid fa-hand-holding-heart"></i>
-          <span class="tl-date">2021 — Present</span>
+        <div>
           <h3>Volunteering</h3>
-          <p><strong>GameFed</strong> (2022 — present): gamification &amp; digital gaming.<br/><strong>Patika</strong> (2021): trainee &amp; volunteer.</p>
+          <p>GameFed, gamification and digital games, 2022 – present. Patika, trainee and volunteer, 2021.</p>
         </div>
       </div>
+      <h3 class="cert-title">48 certificates, most recognised first</h3>
       <div class="cert-gallery" id="cert-gallery"></div>
-      <div class="store-links"><button class="btn btn-primary btn-big cert-more" id="cert-more" hidden><i class="fa-solid fa-award"></i> <span>See all certificates</span> <i class="fa-solid fa-chevron-down"></i></button></div>
-      <div class="lightbox" id="lightbox" hidden>
+      <div class="cert-more-wrap"><button class="btn btn-solid" id="cert-more" hidden><span>See all certificates</span></button></div>
+      <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Certificate viewer">
         <button class="lb-btn lb-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-        <button class="lb-btn lb-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="lb-btn lb-prev" aria-label="Previous certificate"><i class="fa-solid fa-chevron-left"></i></button>
         <figure><img alt="" /><figcaption></figcaption></figure>
-        <button class="lb-btn lb-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="lb-btn lb-next" aria-label="Next certificate"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
-    <section class="section" id="contact">
-      <div class="contact-box reveal">
-        <span class="section-tag">07 — Contact</span>
-        <h2>Let's build something <span class="gradient-text">fun</span></h2>
-        <p>Game development, product management, publishing, training or consulting — tell me what you have in mind.</p>
-        <div class="contact-grid">
-          <a href="mailto:atakan_naci@hotmail.com" class="contact-item"><i class="fa-solid fa-envelope"></i><span>atakan_naci@hotmail.com</span></a>
-          <a href="tel:+905539510133" class="contact-item"><i class="fa-solid fa-phone"></i><span>+90 553 951 01 33</span></a>
-          <a href="https://www.linkedin.com/in/atakannaci/" target="_blank" rel="noopener" class="contact-item"><i class="fa-brands fa-linkedin-in"></i><span>linkedin.com/in/atakannaci</span></a>
-          <a href="https://www.linkedin.com/company/aztech-games/" target="_blank" rel="noopener" class="contact-item"><i class="fa-solid fa-building"></i><span>Aztech Games on LinkedIn</span></a>
-          <a href="https://discord.com/invite/XVmYMdcRA2" target="_blank" rel="noopener" class="contact-item"><i class="fa-brands fa-discord"></i><span>Aztech Games Discord</span></a>
-          <a href="https://aztechgamesltd.blogspot.com/" target="_blank" rel="noopener" class="contact-item"><i class="fa-solid fa-globe"></i><span>Aztech Games website</span></a>
-        </div>
-        <a href="mailto:atakan_naci@hotmail.com" class="btn btn-primary btn-big"><i class="fa-solid fa-paper-plane"></i> Say Hello</a>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <h2>Got a game, a team or a class in mind?</h2>
+        <p>Production, product management, publishing, training or consulting — write and I'll reply.</p>
+        <a class="contact-mail" href="mailto:atakan_naci@hotmail.com">atakan_naci@hotmail.com</a>
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/atakannaci/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="tel:+905539510133"><i class="fa-solid fa-phone" aria-hidden="true"></i> +90 553 951 01 33</a></li>
+          <li><a href="https://github.com/AztechGames" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
+          <li><a href="https://www.youtube.com/@AztechGames" target="_blank" rel="noopener"><i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+          <li><a href="https://discord.com/invite/XVmYMdcRA2" target="_blank" rel="noopener"><i class="fa-brands fa-discord" aria-hidden="true"></i> Discord</a></li>
+          <li><a href="https://www.instagram.com/aztech_games/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/aztech-games/" target="_blank" rel="noopener"><i class="fa-solid fa-building" aria-hidden="true"></i> Aztech Games on LinkedIn</a></li>
+          <li><a href="https://aztechgamesltd.blogspot.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe" aria-hidden="true"></i> Studio website</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Atakan Naci Çakır · Aztech Games</p>
-    <a href="#home" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  <footer class="foot">
+    <p>© <span id="year">2026</span> Atakan Naci Çakır, Aztech Games</p>
+    <a href="assets/cv.pdf" download="Atakan_Naci_Cakir_CV.pdf">Download CV (PDF)</a>
   </footer>
 
   <script>window.CERT_FILES = [{% for f in site.static_files %}{% if f.path contains '/assets/img/certs/' %}{{ f.name | jsonify }},{% endif %}{% endfor %}];</script>
-  <script src="assets/js/main.js?v=8"></script>
+  <script src="assets/js/main.js?v=10"></script>
 </body>
 </html>
