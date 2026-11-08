@@ -76,6 +76,63 @@
     cards.forEach(card => card.classList.toggle("hide", f !== "all" && card.dataset.cat !== f));
   }));
 
+  // Certificates gallery: lists every image/PDF in assets/img/certs automatically
+  (async () => {
+    const DIR = "assets/img/certs/";
+    const FALLBACK = ["GFA Winter Jam - ODTU Teknokent ATOM.jpg", "Game Development Winter Camp 2022 - Bilisim Vadisi.jpg"];
+    const SHOW = 6;
+    const gal = document.getElementById("cert-gallery");
+    const more = document.getElementById("cert-more");
+    let files = FALLBACK;
+    try {
+      const res = await fetch("https://api.github.com/repos/AztechGames/AztechGames.github.io/contents/" + DIR);
+      if (res.ok) files = (await res.json()).filter(f => f.type === "file").map(f => f.name);
+    } catch (e) { /* keep fallback */ }
+    files = files.filter(n => /\.(jpe?g|png|webp|gif|pdf)$/i.test(n)).sort((a, b) => a.localeCompare(b, "tr"));
+    const title = n => n.replace(/\.[^.]+$/, "").replace(/[_]+/g, " ").replace(/\s+-\s+/g, " — ");
+    const images = [];
+    files.forEach((n, i) => {
+      const url = DIR + encodeURIComponent(n);
+      const pdf = /\.pdf$/i.test(n);
+      const a = document.createElement("a");
+      a.className = "cert visible" + (i >= SHOW ? " cert-hidden" : "");
+      a.href = url; a.target = "_blank"; a.rel = "noopener";
+      a.innerHTML = pdf
+        ? `<div class="cert-pdf"><i class="fa-solid fa-file-pdf"></i></div><span></span>`
+        : `<img loading="lazy" alt="" /><span></span>`;
+      a.querySelector("span").textContent = title(n);
+      if (!pdf) {
+        const img = a.querySelector("img"); img.src = url; img.alt = title(n);
+        const idx = images.push({ url, cap: title(n) }) - 1;
+        a.addEventListener("click", e => { e.preventDefault(); openLb(idx); });
+      }
+      gal.appendChild(a);
+    });
+    if (files.length > SHOW) {
+      more.hidden = false;
+      more.addEventListener("click", () => {
+        gal.querySelectorAll(".cert-hidden").forEach(c => c.classList.remove("cert-hidden"));
+        more.hidden = true;
+      });
+    }
+    // Lightbox
+    const lb = document.getElementById("lightbox");
+    const lbImg = lb.querySelector("img"), lbCap = lb.querySelector("figcaption");
+    let cur = 0;
+    function openLb(i) { cur = (i + images.length) % images.length; lbImg.src = images[cur].url; lbCap.textContent = images[cur].cap; lb.hidden = false; document.body.style.overflow = "hidden"; }
+    function closeLb() { lb.hidden = true; document.body.style.overflow = ""; }
+    lb.querySelector(".lb-close").onclick = closeLb;
+    lb.querySelector(".lb-prev").onclick = () => openLb(cur - 1);
+    lb.querySelector(".lb-next").onclick = () => openLb(cur + 1);
+    lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+    addEventListener("keydown", e => {
+      if (lb.hidden) return;
+      if (e.key === "Escape") closeLb();
+      if (e.key === "ArrowLeft") openLb(cur - 1);
+      if (e.key === "ArrowRight") openLb(cur + 1);
+    });
+  })();
+
   // Footer year
   document.getElementById("year").textContent = new Date().getFullYear();
 
