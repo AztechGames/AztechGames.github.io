@@ -77,17 +77,13 @@
   }));
 
   // Certificates gallery: lists every image/PDF in assets/img/certs automatically
-  (async () => {
+  (() => {
     const DIR = "assets/img/certs/";
     const FALLBACK = ["GFA Winter Jam - ODTU Teknokent ATOM.jpg", "Game Development Winter Camp 2022 - Bilisim Vadisi.jpg"];
     const SHOW = 6;
     const gal = document.getElementById("cert-gallery");
     const more = document.getElementById("cert-more");
-    let files = FALLBACK;
-    try {
-      const res = await fetch("https://api.github.com/repos/AztechGames/AztechGames.github.io/contents/" + DIR);
-      if (res.ok) files = (await res.json()).filter(f => f.type === "file").map(f => f.name);
-    } catch (e) { /* keep fallback */ }
+    let files = (window.CERT_FILES && window.CERT_FILES.length) ? window.CERT_FILES : FALLBACK;
     files = files.filter(n => /\.(jpe?g|png|webp|gif|pdf)$/i.test(n)).sort((a, b) => a.localeCompare(b, "tr"));
     const title = n => n.replace(/\.[^.]+$/, "").replace(/[_]+/g, " ").replace(/\s+-\s+/g, " — ");
     const images = [];
