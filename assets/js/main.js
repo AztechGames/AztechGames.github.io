@@ -82,7 +82,7 @@
     const FALLBACK = ["GFA Winter Jam - ODTU Teknokent ATOM.jpg", "Game Development Winter Camp 2022 - Bilisim Vadisi.jpg"];
     const SHOW = 6;
     // Featured first: game / Unity / jam certificates, then everything else
-    const PRIORITY = [/jam/i, /game|oyun/i, /unity/i, /c#/i, /scrum|product|proje|ürün/i];
+    const PRIORITY = [/jam|hackathon/i, /bootcamp/i, /game|oyun/i, /unity/i, /c#/i, /scrum|product|proje|ürün/i];
     const rank = n => { const i = PRIORITY.findIndex(r => r.test(n)); return i < 0 ? 99 : i; };
     const gal = document.getElementById("cert-gallery");
     const more = document.getElementById("cert-more");
