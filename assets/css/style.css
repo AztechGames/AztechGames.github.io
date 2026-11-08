@@ -71,7 +71,8 @@ ul, ol { list-style: none; }
   clip-path: polygon(12% 0, 88% 0, 88% 12%, 100% 12%, 100% 88%, 88% 88%, 88% 100%, 12% 100%, 12% 88%, 0 88%, 0 12%, 12% 12%);
 }
 .mark:hover { color: var(--jade-deep); background: var(--lime); }
-.menu { display: flex; gap: 22px; margin-left: auto; }
+.bar nav { margin-left: auto; }
+.menu { display: flex; gap: 22px; }
 .menu a { color: var(--lime-dim); text-decoration: none; font-size: 15px; font-weight: 500; padding: 6px 0; border-bottom: 2px solid transparent; }
 .menu a:hover, .menu a.active { color: var(--lime); border-color: var(--maize); }
 .cv-link { font-size: 15px; font-weight: 700; color: var(--maize); text-decoration: none; border: 2px solid var(--maize); padding: 8px 14px; white-space: nowrap; }
@@ -159,7 +160,7 @@ ul, ol { list-style: none; }
 /* Games — icons on stone */
 .game-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 24px 20px; margin-top: 40px; }
 .game a { display: block; text-decoration: none; color: var(--lime); }
-.game img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 22%; background: var(--jade); }
+.game img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 22%; background: var(--jade); }
 .game a:hover img { outline: 3px solid var(--maize); outline-offset: 4px; }
 .game h3 { font-size: 16px; font-weight: 700; font-stretch: var(--semi); margin-top: 12px; line-height: 1.25; }
 .game p { font-size: 14px; color: var(--lime-dim); }
