@@ -8,4 +8,4 @@ Personal CV + showcase site served by GitHub Pages at https://aztechgames.github
 - `assets/cv.pdf` — downloadable CV (replace with your own)
 - `assets/img/` — put your own photos here and update `src` attributes
 
-Content is currently placeholder/sample data.
+Content: Atakan Naci Çakır — Founder of Aztech Games.

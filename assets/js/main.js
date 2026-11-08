@@ -1,7 +1,7 @@
 // ===== Aztech Games — Portfolio interactions =====
 (() => {
   // Typing effect
-  const roles = ["mobile games.", "Unity tools.", "game systems.", "fun experiences."];
+  const roles = ["mobile games.", "Unity tools.", "game dev teams.", "future game developers."];
   const typed = document.getElementById("typed");
   let r = 0, c = 0, deleting = false;
   function type() {
@@ -68,7 +68,7 @@
 
   // Project filters
   const filters = document.querySelectorAll(".filter");
-  const cards = document.querySelectorAll(".project-card");
+  const cards = document.querySelectorAll(".project-card, .game-card");
   filters.forEach(btn => btn.addEventListener("click", () => {
     filters.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
