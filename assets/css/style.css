@@ -329,3 +329,13 @@ h1, h2, h3, h4 { font-family: "Space Grotesk", sans-serif; line-height: 1.15; }
 }
 
 [hidden] { display: none !important; }
+
+/* "See all certificates" button */
+button.btn { font-family: inherit; color: #fff; }
+.cert-more { margin-top: 1rem; animation: pulse-glow 2.4s ease-in-out infinite; }
+.cert-more .fa-chevron-down { transition: transform .3s; }
+.cert-more:hover .fa-chevron-down { transform: translateY(3px); }
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 10px 30px rgba(124, 92, 255, .35); }
+  50% { box-shadow: 0 10px 40px rgba(0, 212, 255, .6), 0 0 0 6px rgba(0, 212, 255, .12); }
+}

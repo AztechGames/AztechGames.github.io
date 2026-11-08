@@ -109,6 +109,7 @@
     });
     if (files.length > SHOW) {
       more.hidden = false;
+      more.querySelector("span").textContent = `See all ${files.length} certificates`;
       more.addEventListener("click", () => {
         gal.querySelectorAll(".cert-hidden").forEach(c => c.classList.remove("cert-hidden"));
         more.hidden = true;

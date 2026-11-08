@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css?v=4" />
+  <link rel="stylesheet" href="assets/css/style.css?v=5" />
 </head>
 <body>
   <canvas id="bg-canvas" aria-hidden="true"></canvas>
@@ -412,7 +412,7 @@
         </div>
       </div>
       <div class="cert-gallery" id="cert-gallery"></div>
-      <div class="store-links"><button class="btn btn-outline" id="cert-more" hidden><i class="fa-solid fa-images"></i> Show all certificates</button></div>
+      <div class="store-links"><button class="btn btn-primary btn-big cert-more" id="cert-more" hidden><i class="fa-solid fa-award"></i> <span>See all certificates</span> <i class="fa-solid fa-chevron-down"></i></button></div>
       <div class="lightbox" id="lightbox" hidden>
         <button class="lb-btn lb-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
         <button class="lb-btn lb-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
@@ -446,6 +446,6 @@
   </footer>
 
   <script>window.CERT_FILES = [{% for f in site.static_files %}{% if f.path contains '/assets/img/certs/' %}{{ f.name | jsonify }},{% endif %}{% endfor %}];</script>
-  <script src="assets/js/main.js?v=6"></script>
+  <script src="assets/js/main.js?v=7"></script>
 </body>
 </html>
