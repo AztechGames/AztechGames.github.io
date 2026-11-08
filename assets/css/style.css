@@ -198,7 +198,9 @@ h1, h2, h3, h4 { font-family: "Space Grotesk", sans-serif; line-height: 1.15; }
 .filter { padding: .6rem 1.2rem; border-radius: 999px; border: 1px solid var(--card-border); background: var(--card); color: var(--muted); font: inherit; font-weight: 500; cursor: pointer; transition: .25s; }
 .filter:hover { color: var(--text); }
 .filter.active { background: var(--grad); color: #fff; border-color: transparent; }
-.projects-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem; align-items: start; }
+.projects-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.4rem 1rem; align-items: start; }
+.projects-grid > .project-card { grid-column: span 3; }
+.projects-grid > .game-card { grid-column: span 2; }
 .project-card { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); overflow: hidden; transition: transform .35s, box-shadow .35s, border-color .35s; }
 .project-card:hover { transform: translateY(-8px); box-shadow: var(--shadow); border-color: rgba(0, 212, 255, .4); }
 .project-card.hide, .game-card.hide { display: none; }
@@ -223,16 +225,11 @@ h1, h2, h3, h4 { font-family: "Space Grotesk", sans-serif; line-height: 1.15; }
 .edu-card p { color: var(--muted); font-size: .92rem; }
 
 /* Games */
-.game-card {
-  display: flex; flex-direction: column; align-items: center; text-align: center; padding: 1.4rem 1rem 1.3rem;
-  background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
-  transition: transform .35s, border-color .35s, box-shadow .35s;
-}
-.game-card img { width: 72%; aspect-ratio: 1; object-fit: cover; border-radius: 22%; box-shadow: 0 12px 30px rgba(0,0,0,.45); transition: transform .4s; }
-.game-card:hover { transform: translateY(-8px); border-color: rgba(0, 212, 255, .4); box-shadow: var(--shadow); }
-.game-card:hover img { transform: scale(1.06) rotate(-3deg); }
-.game-card h3 { font-size: 1.05rem; margin-top: 1rem; }
-.game-card span { font-size: .75rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--a2); font-weight: 600; margin-top: .2rem; }
+.game-card { display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; }
+.game-card img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 22%; box-shadow: 0 10px 24px rgba(0,0,0,.45); transition: transform .3s; }
+.game-card:hover img { transform: translateY(-6px) scale(1.04) rotate(-3deg); }
+.game-card h3 { font-size: .98rem; margin-top: .75rem; line-height: 1.25; }
+.game-card span { font-size: .72rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--a2); font-weight: 600; margin-top: .15rem; }
 .store-links { display: flex; justify-content: center; gap: .8rem; flex-wrap: wrap; margin-top: 2.5rem; }
 .section-sub { color: var(--muted); max-width: 640px; margin-top: .8rem; }
 
@@ -300,7 +297,8 @@ h1, h2, h3, h4 { font-family: "Space Grotesk", sans-serif; line-height: 1.15; }
   .hero-cta, .socials { justify-content: center; }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .skills-grid, .edu-grid, .academy-grid { grid-template-columns: 1fr 1fr; }
-  .projects-grid { grid-template-columns: repeat(3, 1fr); }
+  .projects-grid > .project-card { grid-column: span 4; }
+  .projects-grid > .game-card { grid-column: span 3; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .badge-1 { left: -4%; } .badge-2 { left: -6%; } .badge-3 { right: -4%; }
 }
@@ -317,7 +315,8 @@ h1, h2, h3, h4 { font-family: "Space Grotesk", sans-serif; line-height: 1.15; }
   .nav-links a { font-size: 1.15rem; }
   .burger { z-index: 101; }
   .skills-grid, .edu-grid, .academy-grid, .info-list, .cert-gallery { grid-template-columns: 1fr; }
-  .projects-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .projects-grid > .project-card { grid-column: span 6; }
+  .projects-grid > .game-card { grid-column: span 4; }
   .about-exp { right: 10px; }
   .float-badge { font-size: .72rem; padding: .45rem .7rem; }
   .section { padding: 4.5rem 16px; }
