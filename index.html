@@ -1,1 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aztech Games — Game Developer Portfolio & CV</title>
+  <meta name="description" content="Portfolio, CV and showcase of Aztech Games: mobile games, Unity Asset Store tools and game development experience." />
+  <meta property="og:title" content="Aztech Games — Portfolio & CV" />
+  <meta property="og:description" content="Mobile games, Unity assets and game development experience." />
+  <meta property="og:image" content="https://picsum.photos/seed/aztech-og/1200/630" />
+  <meta name="theme-color" content="#0b0d17" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo"><span class="logo-mark">A</span>ztech<span class="accent">.</span></a>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="assets/cv.pdf" class="btn btn-small btn-outline nav-cv" download><i class="fa-solid fa-download"></i> CV</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-text reveal">
+        <p class="eyebrow">👋 Hello, I'm</p>
+        <h1 class="hero-name">John <span class="gradient-text">Doe</span></h1>
+        <h2 class="hero-role">I build <span id="typed" class="typed"></span><span class="caret">|</span></h2>
+        <p class="hero-desc">
+          Founder &amp; Lead Developer at <strong>Aztech Games</strong>. I craft mobile games played by
+          thousands and publish Unity tools that help other developers ship faster.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-gamepad"></i> View My Work</a>
+          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+        </div>
+        <ul class="socials">
+          <li><a href="https://github.com/AztechGames" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/example" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://assetstore.unity.com/publishers/00000" target="_blank" rel="noopener" aria-label="Unity Asset Store"><i class="fa-brands fa-unity"></i></a></li>
+          <li><a href="https://play.google.com/store/apps/dev?id=0000000000" target="_blank" rel="noopener" aria-label="Google Play"><i class="fa-brands fa-google-play"></i></a></li>
+          <li><a href="https://apps.apple.com/developer/id000000000" target="_blank" rel="noopener" aria-label="App Store"><i class="fa-brands fa-app-store-ios"></i></a></li>
+          <li><a href="https://itch.io/profile/example" target="_blank" rel="noopener" aria-label="itch.io"><i class="fa-brands fa-itch-io"></i></a></li>
+          <li><a href="https://x.com/example" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <img src="https://picsum.photos/seed/aztech-avatar/600/600" alt="Profile photo" class="avatar" />
+          <div class="float-badge badge-1"><i class="fa-brands fa-unity"></i> Unity Expert</div>
+          <div class="float-badge badge-2"><i class="fa-solid fa-mobile-screen"></i> 10+ Mobile Games</div>
+          <div class="float-badge badge-3"><i class="fa-solid fa-star"></i> 4.8 Asset Rating</div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+      <div class="stat reveal"><span class="stat-num" data-count="7">0</span><span class="stat-plus">+</span><p>Years Experience</p></div>
+      <div class="stat reveal"><span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span><p>Games Shipped</p></div>
+      <div class="stat reveal"><span class="stat-num" data-count="25">0</span><span class="stat-plus">+</span><p>Unity Assets</p></div>
+      <div class="stat reveal"><span class="stat-num" data-count="500">0</span><span class="stat-plus">K+</span><p>Downloads</p></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="section-tag">01 — About</span>
+        <h2>Who I <span class="gradient-text">Am</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <img src="https://picsum.photos/seed/aztech-about/700/800" alt="About me" />
+          <div class="about-exp"><strong>7+</strong><span>years making<br/>games</span></div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            I'm a game developer based in <strong>Gaziantep, Türkiye</strong>, focused on mobile games and
+            developer tools for Unity. Since 2019 I've been running <strong>Aztech Games</strong>, where we design,
+            build and publish hyper-casual and casual titles alongside production-ready assets on the Unity Asset Store.
+          </p>
+          <p>
+            I love the full loop: prototyping a mechanic in a day, polishing game feel, optimizing for low-end devices,
+            and turning reusable systems into tools other studios rely on.
+          </p>
+          <ul class="info-list">
+            <li><i class="fa-solid fa-user"></i><span>Name</span><strong>John Doe</strong></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>Location</span><strong>Gaziantep, TR</strong></li>
+            <li><i class="fa-solid fa-envelope"></i><span>Email</span><strong>hello@example.com</strong></li>
+            <li><i class="fa-solid fa-language"></i><span>Languages</span><strong>Turkish, English</strong></li>
+            <li><i class="fa-solid fa-briefcase"></i><span>Status</span><strong class="status-open">Open to work</strong></li>
+          </ul>
+          <a href="assets/cv.pdf" class="btn btn-primary" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="section-tag">02 — Skills</span>
+        <h2>Tech <span class="gradient-text">Stack</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-code"></i> Programming</h3>
+          <div class="bar"><span>C#</span><div class="bar-track"><div class="bar-fill" data-w="95"></div></div></div>
+          <div class="bar"><span>HLSL / Shader Graph</span><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
+          <div class="bar"><span>Python</span><div class="bar-track"><div class="bar-fill" data-w="65"></div></div></div>
+          <div class="bar"><span>JavaScript</span><div class="bar-track"><div class="bar-fill" data-w="60"></div></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-cubes"></i> Engines &amp; Tools</h3>
+          <div class="bar"><span>Unity</span><div class="bar-track"><div class="bar-fill" data-w="95"></div></div></div>
+          <div class="bar"><span>Blender</span><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
+          <div class="bar"><span>Git / Plastic SCM</span><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+          <div class="bar"><span>Unreal Engine</span><div class="bar-track"><div class="bar-fill" data-w="45"></div></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-rocket"></i> Specialties</h3>
+          <div class="chips">
+            <span>Mobile Optimization</span><span>Game Feel / Juice</span><span>Editor Tooling</span>
+            <span>Procedural Generation</span><span>Monetization (IAP/Ads)</span><span>LiveOps</span>
+            <span>Multiplayer (Netcode)</span><span>UI Toolkit</span><span>CI/CD Builds</span>
+            <span>Analytics &amp; A/B Tests</span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-marquee reveal" aria-hidden="true">
+        <div class="marquee-track">
+          <i class="fa-brands fa-unity"></i><i class="fa-brands fa-android"></i><i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-git-alt"></i><i class="fa-brands fa-python"></i><i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-figma"></i><i class="fa-brands fa-github"></i><i class="fa-brands fa-steam"></i>
+          <i class="fa-brands fa-unity"></i><i class="fa-brands fa-android"></i><i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-git-alt"></i><i class="fa-brands fa-python"></i><i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-figma"></i><i class="fa-brands fa-github"></i><i class="fa-brands fa-steam"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <span class="section-tag">03 — Experience</span>
+        <h2>Work <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">2019 — Present</span>
+            <h3>Founder &amp; Lead Developer</h3>
+            <h4><i class="fa-solid fa-building"></i> Aztech Games · Gaziantep</h4>
+            <ul>
+              <li>Shipped 12+ mobile titles on Google Play and the App Store with 500K+ total downloads.</li>
+              <li>Published 25+ Unity Asset Store packages with an average 4.8★ rating.</li>
+              <li>Built an internal toolkit that cut prototype time from 1 week to 2 days.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">2017 — 2019</span>
+            <h3>Unity Developer</h3>
+            <h4><i class="fa-solid fa-building"></i> Example Studio · İstanbul</h4>
+            <ul>
+              <li>Developed gameplay systems for a casual puzzle game with 1M+ installs.</li>
+              <li>Reduced memory usage by 40% through texture atlasing and object pooling.</li>
+              <li>Integrated ad mediation, IAP and Firebase analytics.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">2016 — 2017</span>
+            <h3>Junior Game Developer (Intern)</h3>
+            <h4><i class="fa-solid fa-building"></i> Sample Games Ltd. · Ankara</h4>
+            <ul>
+              <li>Prototyped 6 hyper-casual concepts for market testing.</li>
+              <li>Created editor tools for level designers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <span class="section-tag">04 — Showcase</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="filters reveal" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="game">Mobile Games</button>
+        <button class="filter" data-filter="asset">Unity Assets</button>
+        <button class="filter" data-filter="tool">Tools &amp; Open Source</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <article class="project-card reveal" data-cat="game">
+          <div class="project-img"><img src="https://picsum.photos/seed/aztech-game1/800/500" alt="Sky Runner" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://play.google.com/store/apps/details?id=com.example.game1" target="_blank" rel="noopener" aria-label="Google Play"><i class="fa-brands fa-google-play"></i></a>
+              <a href="https://apps.apple.com/app/id0000000001" target="_blank" rel="noopener" aria-label="App Store"><i class="fa-brands fa-app-store-ios"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Mobile Game</span>
+            <h3>Sky Runner</h3>
+            <p>Endless runner with procedural levels and 200K+ downloads.</p>
+            <div class="tags"><span>Unity</span><span>C#</span><span>AdMob</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-cat="game">
+          <div class="project-img"><img src="https://picsum.photos/seed/aztech-game2/800/500" alt="Block Merge" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://play.google.com/store/apps/details?id=com.example.game2" target="_blank" rel="noopener" aria-label="Google Play"><i class="fa-brands fa-google-play"></i></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener" aria-label="Trailer"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Mobile Game</span>
+            <h3>Block Merge</h3>
+            <p>Relaxing merge-puzzle with daily challenges and leaderboards.</p>
+            <div class="tags"><span>Unity</span><span>Firebase</span><span>IAP</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-cat="asset">
+          <div class="project-img"><img src="https://picsum.photos/seed/aztech-asset1/800/500" alt="Ultimate Inventory System" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://assetstore.unity.com/packages/tools/example-1" target="_blank" rel="noopener" aria-label="Asset Store"><i class="fa-brands fa-unity"></i></a>
+              <a href="https://example.com/docs" target="_blank" rel="noopener" aria-label="Docs"><i class="fa-solid fa-book"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Unity Asset</span>
+            <h3>Ultimate Inventory System</h3>
+            <p>Drag-and-drop inventory, crafting and save system. ★ 4.9</p>
+            <div class="tags"><span>Editor Tool</span><span>UI Toolkit</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-cat="asset">
+          <div class="project-img"><img src="https://picsum.photos/seed/aztech-asset2/800/500" alt="Low Poly Nature Pack" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://assetstore.unity.com/packages/3d/example-2" target="_blank" rel="noopener" aria-label="Asset Store"><i class="fa-brands fa-unity"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Unity Asset</span>
+            <h3>Low Poly Nature Pack</h3>
+            <p>300+ optimized low-poly models for mobile and VR. ★ 4.7</p>
+            <div class="tags"><span>3D</span><span>URP</span><span>Blender</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-cat="tool">
+          <div class="project-img"><img src="https://picsum.photos/seed/aztech-tool1/800/500" alt="Build Pipeline CLI" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://github.com/AztechGames" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Open Source</span>
+            <h3>Build Pipeline CLI</h3>
+            <p>One-command Android/iOS builds with versioning and upload.</p>
+            <div class="tags"><span>Python</span><span>CI/CD</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal" data-cat="game">
+          <div class="project-img"><img src="https://picsum.photos/seed/aztech-game3/800/500" alt="Tiny Tanks" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://example.itch.io/tiny-tanks" target="_blank" rel="noopener" aria-label="itch.io"><i class="fa-brands fa-itch-io"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Game Jam</span>
+            <h3>Tiny Tanks</h3>
+            <p>Local multiplayer tank arena made in 48 hours — jam winner.</p>
+            <div class="tags"><span>Unity</span><span>Netcode</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTS ============ -->
+    <section class="section" id="education">
+      <div class="section-head reveal">
+        <span class="section-tag">05 — Education</span>
+        <h2>Education &amp; <span class="gradient-text">Certificates</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span class="tl-date">2012 — 2016</span>
+          <h3>B.Sc. Computer Engineering</h3>
+          <p>Example University · GPA 3.4 / 4.0</p>
+        </div>
+        <div class="edu-card reveal">
+          <i class="fa-solid fa-certificate"></i>
+          <span class="tl-date">2021</span>
+          <h3>Unity Certified Professional: Programmer</h3>
+          <p>Unity Technologies</p>
+        </div>
+        <div class="edu-card reveal">
+          <i class="fa-solid fa-trophy"></i>
+          <span class="tl-date">2022</span>
+          <h3>1st Place — Global Game Jam (Local Site)</h3>
+          <p>Global Game Jam</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" id="testimonials">
+      <div class="section-head reveal">
+        <span class="section-tag">06 — Reviews</span>
+        <h2>What People <span class="gradient-text">Say</span></h2>
+      </div>
+      <div class="testi-grid">
+        <blockquote class="testi reveal">
+          <p>"Placeholder review: the inventory system saved us weeks of work. Clean code and great support."</p>
+          <footer><img src="https://picsum.photos/seed/aztech-p1/80/80" alt="" /><div><strong>Jane Smith</strong><span>Indie Developer</span></div></footer>
+        </blockquote>
+        <blockquote class="testi reveal">
+          <p>"Placeholder review: fast, reliable and understands mobile performance deeply."</p>
+          <footer><img src="https://picsum.photos/seed/aztech-p2/80/80" alt="" /><div><strong>Alex Johnson</strong><span>Producer, Example Studio</span></div></footer>
+        </blockquote>
+        <blockquote class="testi reveal">
+          <p>"Placeholder review: one of the best Unity asset publishers we've worked with."</p>
+          <footer><img src="https://picsum.photos/seed/aztech-p3/80/80" alt="" /><div><strong>Maria Garcia</strong><span>Technical Artist</span></div></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="contact-box reveal">
+        <span class="section-tag">07 — Contact</span>
+        <h2>Let's build something <span class="gradient-text">awesome</span></h2>
+        <p>Have a project, a collaboration idea or a question about our assets? My inbox is open.</p>
+        <div class="contact-grid">
+          <a href="mailto:hello@example.com" class="contact-item"><i class="fa-solid fa-envelope"></i><span>hello@example.com</span></a>
+          <a href="https://www.linkedin.com/in/example" target="_blank" rel="noopener" class="contact-item"><i class="fa-brands fa-linkedin-in"></i><span>linkedin.com/in/example</span></a>
+          <a href="https://discord.gg/example" target="_blank" rel="noopener" class="contact-item"><i class="fa-brands fa-discord"></i><span>Aztech Games Discord</span></a>
+        </div>
+        <a href="mailto:hello@example.com" class="btn btn-primary btn-big"><i class="fa-solid fa-paper-plane"></i> Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aztech Games. Crafted with <i class="fa-solid fa-heart"></i> &amp; Unity.</p>
+    <a href="#home" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
